@@ -24,7 +24,7 @@ function start(route, handle) {
  		}
  	}
  	catch (err) {
- 		console.log("NowJS failed to load due to" + err);
+ 		console.log("NowJS failed to load due to " + err);
  	}
 }
 
