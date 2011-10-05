@@ -15,11 +15,16 @@ function start(route, handle) {
 	});
 	
 	// Now JS
-	var everyone = require("now").initialize(server);
+	try {
+		var everyone = require("now").initialize(server);
 	
-	everyone.now.distribute = function(message){
-  		// this.now exposes caller's scope
- 		 everyone.now.receive(this.now.name, message);
+		everyone.now.distribute = function(message){
+  			// this.now exposes caller's scope
+ 		 	everyone.now.receive(this.now.name, message);
+ 		}
+ 	}
+ 	catch {
+ 		console.log("NowJS failed to load");
  	}
 }
 
