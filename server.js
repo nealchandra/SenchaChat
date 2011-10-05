@@ -1,7 +1,7 @@
 var http = require("http");
 var url = require("url");
 
-console.log("Attempting to start server at http://127.0.0.1:8000/");
+console.log("Attempting to start server at http://127.0.0.1:8888/");
 
 function start(route, handle) {
 	function onRequest (request, response) {
