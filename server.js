@@ -23,8 +23,8 @@ function start(route, handle) {
  		 	everyone.now.receive(this.now.name, message);
  		}
  	}
- 	catch {
- 		console.log("NowJS failed to load");
+ 	catch (err) {
+ 		console.log("NowJS failed to load due to" + err);
  	}
 }
 
