@@ -11,7 +11,7 @@ function start(route, handle) {
 	}
 	var server = http.createServer(onRequest);
 	server.listen(8888, function() {
-		console.log("Server running at http://127.0.0.1:8000/");
+		console.log("Server running at http://127.0.0.1:8888/");
 	});
 	
 	// Now JS
